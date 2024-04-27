@@ -40,24 +40,6 @@ public class Banco {
 
         }
         
-       /*public static void exibirCliente(String mensagem) {
-            lock.lock();
-            try {
-                System.out.println(mensagem);
-            } finally {
-                lock.unlock();
-            }
-        }
-        
-        public static void exibirFuncionario(String mensagem) {
-            lock.lock();
-            try {
-                System.out.println(mensagem);
-            }finally {
-                lock.unlock();
-            }    
-        }*/
-        
         public static void transferir(Conta origem, Conta destino, double valor) {
             origem.sacar(valor);
             destino.depositar(valor);
